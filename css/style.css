@@ -66,7 +66,8 @@ main .container {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    /* object-fit: cover; */
+    object-fit: cover;
+    position: relative;
 }
 
 .card img {
@@ -77,6 +78,16 @@ main .container {
     width: 100%;
     display:flex;
     justify-content: center;
+    padding-bottom: 50px;
+}
+
+.nametag {
+    position: absolute;
+    bottom:0;
+    left:0;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
 }
 
 

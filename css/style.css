@@ -14,6 +14,31 @@ a {
     text-decoration: none;
 }
 
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li{
+    display:inline-block
+}
+
+.flex {
+    display: flex;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+/* Palette colori */
+.verde-brutto {
+    color: #4bc800;
+}
+
  /* Header */
  header {
      width: 100%;
@@ -22,19 +47,19 @@ a {
      background-color: #000
  }
 
- .button {
-     background-color: #4a4a4a;
+ header .button {
      display: flex;
      align-items: center;
-     height: 25px;
-     margin: 5px;
-     padding:5px 10px;
-     border-radius: 4px;
  }
 
- .button a{
-     text-decoration: none;
-     color: #fff;
+ header .button a{
+    background-color: #4a4a4a;
+    text-decoration: none;
+    color: #fff;
+    height: 25px;
+    margin: 5px;
+    padding:5px 10px;
+    border-radius: 4px;
  }
 
  .button a i[class$="th"] {
@@ -92,6 +117,9 @@ main .container {
 
 /* Footer */
 footer {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
     height:70px;
     background-color: #333;
     position:fixed;
@@ -99,4 +127,54 @@ footer {
     width: 100%;
     z-index: 900;
 }
+
+.footer-l {
+    width: 10%;
+    color: #fff;
+    align-items: center;
+}
+
+.footer-l i {
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.footer-l i:not(:last-of-type) {
+    margin-right: 10px;
+}
+
+.footer-c {
+    color: white;
+    display: flex;
+}
+
+.footer-r {
+    width: 10%;
+    height: 100%;
+}
+
+.footer-r .button {
+    width: 100%;
+    height: 70px;
+}
+
+.footer-r a {
+    text-decoration: none;
+    color: #fff;
+    width: 100%;
+    height: 70px;
+    background-color: #4a4a4a;
+    transition: all 700ms;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.footer-r a:hover {
+    background-color: red;
+    color: #000;
+    text-decoration: underline;
+}
+
+
  /* Debug */
